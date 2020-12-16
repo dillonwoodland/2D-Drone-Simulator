@@ -1,10 +1,10 @@
 #include "drone.h"
 
+// Constructors
 Drone::Drone()
 {
 
 }
-
 Drone::Drone(double xPosition, double yPosition) {
     this->position[0] = xPosition;
     this->position[1] = yPosition;

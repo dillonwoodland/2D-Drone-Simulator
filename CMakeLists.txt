@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(2D_Drone_Simulator)
+project(2D-Drone-Simulator)
 
-find_package(Qt5Widgets)
-find_package(Qt5Gui)
+#find_package(Qt5Widgets)
+#find_package(Qt5Gui)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -24,22 +24,22 @@ add_executable(${PROJECT_NAME}_UnitTests
     droneUnitTest.cpp
     )
 
-add_executable(mainWindow
-    mainwindow.cpp
-    mainwindow.h
-    mainwindow.ui)
+#add_executable(mainWindow
+#    mainwindow.cpp
+#    mainwindow.h
+#    mainwindow.ui)
 
-target_link_libraries(Drones
-    Qt5::Widgets
-    Qt5::Gui
-    )
+#target_link_libraries(Drones
+#    Qt5::Widgets
+#    Qt5::Gui
+#    )
 
 target_link_libraries(${PROJECT_NAME}_UnitTests gtest gtest_main
     Drones
     )
 
-target_link_libraries(mainWindow
-    Drones
-    Qt5::Widgets
-    Qt5::Gui
-    )
+#target_link_libraries(mainWindow
+#    Drones
+#    Qt5::Widgets
+#    Qt5::Gui
+#    )

@@ -6,7 +6,9 @@ class Drone
 public:
     Drone();
     Drone(double xPosition, double yPosition);
+    Drone(double xPosition, double yPosition, double xVelocity, double yVelocity);
 
+    // Velocity and Position Setters
     void setPosition(double xPosition, double yPosition);
     void setXPosition(double xPosition);
     void setYPosition(double yPosition);
@@ -14,10 +16,11 @@ public:
     void setXVelocity(double xVelocity);
     void setYVelocity(double yVelocity);
 
-    double getPosition();
+    //Velocity and Position Getters
+    double* getPosition();
     double getXPosition();
     double getYposition();
-    double getVelocity();
+    double* getVelocity();
     double getXVelocity();
     double getYVelocity();
 

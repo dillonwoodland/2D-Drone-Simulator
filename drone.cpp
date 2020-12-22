@@ -37,6 +37,9 @@ void Drone::setXVelocity(double xVelocity) {
 void Drone::setYVelocity(double yVelocity) {
     this->velocity[1] = yVelocity;
 }
+void Drone::setRotation(double rotation) {
+    this->rotation = rotation;
+}
 
 // Velocity and Position Getters
 double* Drone::getPosition() {
@@ -56,4 +59,7 @@ double Drone::getXVelocity() {
 }
 double Drone::getYVelocity() {
     return this->velocity[1];
+}
+double Drone::getRotation() {
+    return this->rotation;
 }

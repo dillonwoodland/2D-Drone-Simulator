@@ -85,3 +85,13 @@ TEST(KinematicsOfTheDrone, GivenXYVelocitiesAndPositionsViaTheConstructor_Return
     EXPECT_EQ(yVelExpected,yVelActual);
 }
 
+TEST(KinematicsOfTheDrone, GivenARotationIn_ReturnsCorrectRotationThatWasSet) {
+    double rotation{45.244};
+    Drone drone;
+
+    drone.setRotation(rotation);
+    double actual{drone.getRotation()};
+    double expected = rotation;
+
+    EXPECT_EQ(expected, actual);
+}

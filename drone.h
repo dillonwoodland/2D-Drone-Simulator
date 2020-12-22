@@ -16,6 +16,7 @@ public:
     void setVelocity(double xVelocity, double yVelocity);
     void setXVelocity(double xVelocity);
     void setYVelocity(double yVelocity);
+    void setRotation(double rotation);
 
     //Velocity and Position Getters
     double* getPosition();
@@ -24,10 +25,12 @@ public:
     double* getVelocity();
     double getXVelocity();
     double getYVelocity();
+    double getRotation();
 
 private:
     double position[2]{0.0,0.0};
     double velocity[2]{0.0,0.0};
+    double rotation;
 
 
 };

@@ -13,3 +13,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+//void MainWindow::draw_drone() {
+//    QBrush blackBrush(Qt::black);
+//    QPen blackPen(blackBrush,0);
+//}

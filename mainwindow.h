@@ -15,6 +15,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+//    void draw_drone();
+
 private:
     Ui::MainWindow *ui;
 };
